@@ -1,5 +1,5 @@
 # the main Flask application
-from template_logic import create_template_app
+from outline_logic import create_template_app
 
 app = create_template_app()
 
