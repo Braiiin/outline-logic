@@ -1,5 +1,5 @@
 from logic.v1.views import register_api
-from .api import SampleAPI
+from .api import OutlineAPI
 
 
-register_api(SampleAPI, 'sample')
+register_api(OutlineAPI, 'outline')
