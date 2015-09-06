@@ -2,8 +2,8 @@ from logic.v1.models import Document, db
 from logic.v1.core.models import User
 
 class Outline(Document):
-	"""outline model"""
+    """outline model"""
 
-	title = db.StringField()
-	content = db.StringField()
-	author = db.ReferenceField(User)
+    title = db.StringField()
+    content = db.StringField(required=True)
+    author = db.ReferenceField(User)
