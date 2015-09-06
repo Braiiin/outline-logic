@@ -32,6 +32,6 @@ class OutlineAPI(BaseAPI):
 
     def can(self, obj, user, permission):
         """Returns a boolean allowing or denying API access"""
-        if permission in ['post', 'get', 'put', 'fetch']:
+        if permission in ['post', 'get', 'put', 'fetch', 'delete']:
             return True
         return False
