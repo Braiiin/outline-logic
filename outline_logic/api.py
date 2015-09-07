@@ -20,7 +20,7 @@ class OutlineAPI(BaseAPI):
             'args': model.fields_to_args()
         },
         'delete': {
-            'args': model.fields_to_args()
+            'args': model.fields_to_args(override={'required': False})
         }
     }
 
