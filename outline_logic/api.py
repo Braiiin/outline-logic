@@ -91,6 +91,8 @@ class OutlineAPI(BaseAPI):
         queries = data['query'].split(' ')
         hashtags, titles = [], []
         for query in queries:
+            if not query:
+                continue
             if query[0] == '#':
                 hashtags.append(str(Hashtag(name=query[1:]).get_or_create().id))
             else:
