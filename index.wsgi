@@ -8,7 +8,7 @@ sys.path.insert(0,"/var/www/logic.outline.braiiin.com")
 
 from outline_logic import create_outline_app
 
-app = create_outline_app(root='outline_logic', config='ProductionConfig')
+application = create_outline_app(root='outline_logic', config='ProductionConfig')
 
 if __name__ == "__main__":
-    app.run(**app.config['INIT'])
+    application.run(**application.config['INIT'])
